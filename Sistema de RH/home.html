@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="home-cabecalho">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">RH manager</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Funcionários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Folha de pagamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Relatórios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="home-texto">
+        <h1>Bem-vindo(a) ao Painel de RH!</h1>
+        <p>Visão Geral dos nossos dados registrados no sistema.</p>
+    </div>
+
+    <!--Cards-->
+    <div class="cards-container">
+        <div class="card card-fixa-funcionarios text-bg-light mb-3">
+            <div class="card-header">Número de Funcionários</div>
+            <div class="card-body">
+                <h1 class="card-title">285</h1>
+                <p class="card-text-funcionarios">+15 novos funcionários esse mês!</p>
+            </div>
+        </div>
+        <div class="card card-fixa-rotatividade text-bg-light mb-3">
+            <div class="card-header">Taxa de Rotatividade</div>
+            <div class="card-body">
+                <h1 class="card-title">4.5%</h1>
+                <p class="card-text-rotatividade">Média anual</p>
+            </div>
+        </div>
+        <div class="card card-fixa-vagas text-bg-light mb-3">
+            <div class="card-header">Vagas Abertas</div>
+            <div class="card-body">
+                <h1 class="card-title">20</h1>
+                <p class="card-text-vagas">12 Candidatos em Fase Final</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Tabela-->
+    <div id="table-container">
+        <h3>Últimas contratações</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Departamento</th>
+                    <th>Data de Admissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Johnathan</td>
+                    <td>Desenvolvedor Júnior</td>
+                    <td>Desenvolvimento Front-End</td>
+                    <td>26/08/2023</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>Auxiliar técnico</td>
+                    <td>Finanças</td>
+                    <td>30/07/2024</td>
+                </tr>
+                <tr>
+                    <td>Caleb</td>
+                    <td>Desenvolvedor Sênior</td>
+                    <td>Desenvolvimento Back-End</td>
+                    <td>15/05/2021</td>
+                </tr>
+                <tr>
+                    <td>Patrícia</td>
+                    <td>Analista financeiro</td>
+                    <td>Finanças</td>
+                    <td>10/11/2020</td>
+                </tr>
+                <tr>
+                    <td>Lúcia</td>
+                    <td>Especialista de RH</td>
+                    <td>Recursos Humanos</td>
+                    <td>16/07/2018</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
