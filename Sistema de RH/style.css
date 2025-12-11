@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: rgba(255, 227, 133, 0.973);
 }
 
 .forms-container {
@@ -42,6 +43,11 @@ body {
 
 .forms-container #forms-login {
     margin-left: 100px;
+    margin-right: 20px;
+}
+
+.forms-container #forms-cadastro{
+    margin-right: 20px;
 }
 
 #forms-login p {
@@ -70,7 +76,7 @@ form button {
     display: flex;
     flex-direction: initial;
     gap: 10px;
-    text-align: right;
+    justify-content: end;
 }
 
 button a {
@@ -107,6 +113,7 @@ button a {
 
 .cards-container {
     display: flex;
+    margin-top: 30px;
     margin-left: 20px;
     gap: 20px;
     height: 200px;
@@ -115,22 +122,19 @@ button a {
 .card-fixa-funcionarios {
     width: 300px;
     height: 200px;
-    border-left: 10px solid green !important;
-    box-shadow: 0 0 1px black;
+    border-left: 10px solid rgb(151, 70, 41) !important;
 }
 
 .card-fixa-rotatividade {
     width: 300px;
     height: 200px;
-    border-left: 10px solid blue !important;
-    box-shadow: 0 0 1px black;
+    border-left: 10px solid rgb(151, 70, 41) !important;
 }
 
 .card-fixa-vagas {
     width: 300px;
     height: 200px;
-    border-left: 10px solid red !important;
-    box-shadow: 0 0 1px black;
+    border-left: 10px solid rgb(151, 70, 41) !important;
 }
 
 .card-title{
@@ -138,15 +142,15 @@ button a {
 }
 
 .card-text-funcionarios{
-    color: green !important;
+    color: rgb(107, 51, 31);
 }
 
 .card-text-rotatividade{
-    color: rgb(4, 0, 255);
+    color: rgb(151, 70, 41);
 }
 
 .card-text-vagas{
-    color: red;
+    color: rgb(151, 70, 41);
 }
 
 #navbarNav {
@@ -164,12 +168,13 @@ button a {
 
 table{
     width: 100%;
-    border: 1px solid gray;  
-    box-shadow: 0 0 1px black;
+    border: 1px solid gray;
+    margin-bottom: 25px;
 }
 
 table thead{
-    background-color: grey; 
+    background-color: orangered; 
+    color: black;
 }
 
 th, td{
@@ -179,4 +184,49 @@ th, td{
 
 tbody td{
     border-bottom: 1px solid gray;
+    background-color: white;
+}
+
+.rodape{
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    /* Caixa principal fica tipo “cartão” */
+    .forms-container {
+        flex-direction: column;      /* vira uma coluna */
+        width: 90%;                  /* ocupa a tela mas mantém formato */
+        margin: 40px auto !important;/* centralizado igual ao Google */
+        padding: 20px;               /* espaçamento interno confortável */
+        height: auto !important;     /* caixa cresce conforme o conteúdo */
+    }
+
+    /* Título e texto centralizados no mobile */
+    .texto {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Inputs ocupam a largura total (igual Google) */
+    form input {
+        width: 100% !important;
+    }
+
+    /* Remove margens que estouram o layout */
+    #forms-login {
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+    }
+
+    /* Botões em uma coluna no celular (como Google "Próximo") */
+    .btn-confirmar {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .btn-confirmar button {
+        width: 100%;
+    }
 }
