@@ -1,18 +1,20 @@
 body {
     text-align: center;
-    background-color: rgba(255, 227, 133, 0.973);
+    background-color: rgb(233, 233, 233);
 }
 
 .forms-container {
-    background-color: orangered;
+    background-color: rgb(51, 97, 196);
     height: 350px;
-    margin-top: 90px;
+    color: white;
+    margin-top: 120px;
     margin-left: 200px;
     margin-right: 200px;
     padding-left: 20px;
     padding-right: 40px;
     display: flex;
     border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .texto {
@@ -46,12 +48,16 @@ body {
     margin-right: 20px;
 }
 
-.forms-container #forms-cadastro{
+.forms-container #forms-cadastro {
     margin-right: 20px;
 }
 
 #forms-login p {
     text-align: left;
+}
+
+#forms-login button a{
+    color: rgb(0, 0, 0);
 }
 
 form input {
@@ -65,6 +71,7 @@ form button {
     width: 100px;
     border-radius: 30px;
     border: none;
+    background-color: white;
 }
 
 #forms-login input {
@@ -79,6 +86,7 @@ form button {
     justify-content: end;
 }
 
+
 button a {
     text-decoration: none;
     color: black;
@@ -86,27 +94,31 @@ button a {
 
 .btn-confirmar #criar-conta {
     border: none;
-    background-color: orangered;
+    background-color: transparent;
 }
 
 #criar-conta:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.904);
 }
 
-#home-cabecalho{
+#criar-conta a:hover{
+    color: black;
+}
+
+#home-cabecalho {
     margin-bottom: 10px;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding-left: 10px;
 }
 
-.navbar-custom{
-    background-color: orangered;
+.navbar-custom {
+    background-color: rgb(51, 97, 196);
     box-shadow: 0 0 3px black;
 }
 
-.home-texto{
+.home-texto {
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -117,40 +129,44 @@ button a {
     margin-left: 20px;
     gap: 20px;
     height: 200px;
+
 }
 
 .card-fixa-funcionarios {
     width: 300px;
     height: 200px;
-    border-left: 10px solid rgb(151, 70, 41) !important;
+    border-left: 10px solid rgb(77, 207, 72) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .card-fixa-rotatividade {
     width: 300px;
     height: 200px;
-    border-left: 10px solid rgb(151, 70, 41) !important;
+    border-left: 10px solid rgb(238, 218, 43) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .card-fixa-vagas {
     width: 300px;
     height: 200px;
-    border-left: 10px solid rgb(151, 70, 41) !important;
+    border-left: 10px solid rgb(228, 22, 22) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.card-title{
+.card-title {
     margin-bottom: 10px;
 }
 
-.card-text-funcionarios{
-    color: rgb(107, 51, 31);
+.card-text-funcionarios {
+    color: rgb(78, 163, 75);
 }
 
-.card-text-rotatividade{
-    color: rgb(151, 70, 41);
+.card-text-rotatividade {
+    color: rgb(168, 158, 65);
 }
 
-.card-text-vagas{
-    color: rgb(151, 70, 41);
+.card-text-vagas {
+    color: rgb(228, 22, 22);
 }
 
 #navbarNav {
@@ -160,66 +176,73 @@ button a {
     margin-right: 20px;
 }
 
-#table-container{
+#navbarNav a{
+    color: white;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+#table-container {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-table{
+table {
     width: 100%;
     border: 1px solid gray;
     margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-table thead{
-    background-color: orangered; 
+table thead {
+    background-color: rgb(51, 97, 196);
     color: black;
+    color: white
 }
 
-th, td{
+th,
+td {
     padding-left: 20px;
     padding: 15px;
 }
 
-tbody td{
+tbody td {
     border-bottom: 1px solid gray;
     background-color: white;
 }
 
-.rodape{
+.rodape {
     text-align: center;
 }
 
 @media (max-width: 600px) {
 
-    /* Caixa principal fica tipo “cartão” */
+
     .forms-container {
-        flex-direction: column;      /* vira uma coluna */
-        width: 90%;                  /* ocupa a tela mas mantém formato */
-        margin: 40px auto !important;/* centralizado igual ao Google */
-        padding: 20px;               /* espaçamento interno confortável */
-        height: auto !important;     /* caixa cresce conforme o conteúdo */
+        flex-direction: column;
+        width: 90%;
+        margin: 40px auto !important;
+        padding: 20px;
+        height: auto !important;
     }
 
-    /* Título e texto centralizados no mobile */
     .texto {
         margin: 0 auto;
         text-align: center;
     }
 
-    /* Inputs ocupam a largura total (igual Google) */
     form input {
         width: 100% !important;
     }
 
-    /* Remove margens que estouram o layout */
     #forms-login {
         margin-left: 0 !important;
         margin-top: 20px !important;
     }
 
-    /* Botões em uma coluna no celular (como Google "Próximo") */
     .btn-confirmar {
         flex-direction: column;
         align-items: stretch;
